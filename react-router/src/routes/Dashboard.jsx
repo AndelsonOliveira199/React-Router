@@ -4,7 +4,11 @@ const Dashboard = () => {
   return (
     <div>
         <NavBar />
-      <h1>Dashboard</h1>
+      <div className="row">
+        <div className="container">
+            <h1>Dashboard</h1>
+        </div>
+      </div>
     </div>
   )
 }
