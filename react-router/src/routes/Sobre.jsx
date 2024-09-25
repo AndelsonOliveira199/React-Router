@@ -1,16 +1,16 @@
 import NavBar from "../Componentes/NavBar"
 
-const Dashboard = () => {
+const Sobre = () => {
   return (
     <div>
         <NavBar />
       <div className="row">
         <div className="container">
-            <h1>Dashboard</h1>
+            <h1>Sobre nós</h1>
         </div>
       </div>
     </div>
   )
 }
 
-export default Dashboard
+export default Sobre

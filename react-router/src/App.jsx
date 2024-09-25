@@ -1,57 +1,46 @@
 import "./App.css";
-// import { imagens } from './assets/imagens';
 import NavBar from "./Componentes/NavBar";
-import { useEffect } from "react";
-import "materialize-css/dist/css/materialize.min.css";
-import "materialize-css/dist/js/materialize.min";
-import { imagens } from "./assets/imagens";
+import Footer from "./Componentes/Footer";
+import Search from "./Componentes/Search";
+import Slide from "./Componentes/Slide";
+import Cards from "./Componentes/Cards"
 
 function App() {
-  useEffect(() => {
-    const M = window.M; // Certifique-se de que Materialize está disponível no escopo global
-    const instance = document.querySelectorAll(".carousel .carousel-slider");
-    M.Carousel.init({ instance, fullWidth: true });
-  }, []);
-
   return (
     <>
       <NavBar />
-      <div className="container">
+
+      {/* SLIDE */}
+
+      <Slide />
+
+      {/* FIM DO SLIDE */}
+
+      {/* CARDS */}
+      <Cards />
+      
+      {/* CONTEÚDO */}
         <div className="row">
-          <div className="col s12">
-            <article className="col s12 m3 l4">
-              <div className="card">
-                <div className="card-image">
-                  <img src={imagens.slide02} alt="" />
-                </div>
-                <div className="card-content">
-                  <p>Primeiro artigo</p>
-                </div>
-              </div>
-            </article>
-            <article className="col s12 m3 l4">
-              <div className="card">
-                <div className="card-image">
-                  <img src={imagens.slide02} alt="" />
-                </div>
-                <div className="card-content">
-                  <p>Primeiro artigo</p>
-                </div>
-              </div>
-            </article>
-            <article className="col s12 m3 l4">
-              <div className="card">
-                <div className="card-image">
-                  <img src={imagens.slide02} alt="" />
-                </div>
-                <div className="card-content">
-                  <p>Primeiro artigo</p>
-                </div>
-              </div>
-            </article>
+          <div className="container">
+            <div className="col s12">
+              <p className="boas_vindas">
+                Saudações e bem-vindo à [React-Router]! Estamos encantados em tê-lo como parte da nossa comunidade. 
+                Sinta-se à vontade para descobrir, interagir e colaborar conosco para criar algo maravilhoso.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+
+        
+
+        {/* SEARCH BAR */}
+
+        <Search />
+      
+
+      {/* FOOTER */}
+
+      <Footer />
     </>
   );
 }

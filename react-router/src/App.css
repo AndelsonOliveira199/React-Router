@@ -1,3 +1,16 @@
 article .card{
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(232, 129, 19, 0.6);
+  margin-top: 50px;
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
+.boas_vindas{
+  font-size: 18px;
+  font-family:fantasy;
+  color: rgba(232, 129, 19, 0.6);
+}
+
