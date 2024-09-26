@@ -1,0 +1,26 @@
+.contactos{
+    margin-top: 100px;
+}
+.contactos .card-panel{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgba(232, 129, 19, 0.6);
+}
+.chip img{
+    height: 50px;
+    width: 100px;
+}
+.chip{
+    height: 50px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    background-color: white;
+}
+.chip .texto{
+    font-family: fantasy;
+    font-size: 20px;
+    padding: 10px;
+}

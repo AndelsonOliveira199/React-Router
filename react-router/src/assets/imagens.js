@@ -6,6 +6,10 @@ import card03 from './card03.jpg'
 import insta from './insta.png'
 import whatsapp from './whatsapp.png'
 import youtub from './youtub.png'
+import facebook from './facebook.png'
+import linkedin from './linkedin.png'
+import twitter from './twitter.png'
+import gmail from './icons8-gmail-novo-480.png'
 
 
 export const imagens = {
@@ -17,4 +21,8 @@ export const imagens = {
     insta,
     whatsapp,
     youtub,
+    facebook,
+    linkedin,
+    twitter,
+    gmail,
 } 

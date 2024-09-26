@@ -4,6 +4,7 @@ import Footer from "./Componentes/Footer";
 import Search from "./Componentes/Search";
 import Slide from "./Componentes/Slide";
 import Cards from "./Componentes/Cards"
+import Conteudo from "./Componentes/Conteudo";
 
 function App() {
   return (
@@ -20,18 +21,7 @@ function App() {
       <Cards />
       
       {/* CONTEÚDO */}
-        <div className="row">
-          <div className="container">
-            <div className="col s12">
-              <p className="boas_vindas">
-                Saudações e bem-vindo à [React-Router]! Estamos encantados em tê-lo como parte da nossa comunidade. 
-                Sinta-se à vontade para descobrir, interagir e colaborar conosco para criar algo maravilhoso.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        
+      <Conteudo />        
 
         {/* SEARCH BAR */}
 

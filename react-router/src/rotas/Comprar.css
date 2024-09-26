@@ -1,0 +1,53 @@
+.formulario{
+    margin-top: 100px;
+}
+.formulario .card{
+    background: rgba(232, 129, 19, 0.6);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+button{
+    width: 460px;
+}
+.inputs{
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-family: fantasy;
+}
+.inputs #produto{
+    margin-left: 15px;
+    font-family: fantasy;
+}
+.botao{
+    background-color: rgb(50, 232, 47);
+}
+.input-field #nome{
+    background-color: white;
+    border-radius: 10px;
+    font-family: fantasy;
+}
+.input-field #quant_prod{
+    background-color: white;
+    border-radius: 10px;
+}
+label{
+    margin-left: 15px;
+    font-family: fantasy;
+    font-size: 18px;
+}
+a{
+    margin: 5px;
+}
+fieldset{
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+fieldset legend{
+    font-family: fantasy;
+    font-size: 18px;
+    padding: 5px;
+}

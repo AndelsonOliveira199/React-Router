@@ -1,0 +1,16 @@
+table{
+    background-color: rgba(232, 129, 19, 0.6);
+    margin-top: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+table thead{
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    border-top-left-radius: 50px;
+}
+table tbody tr td{
+    border-bottom-right-radius: 50px;
+}
