@@ -70,12 +70,12 @@ const Comprar = () => {
                             <div className="input-field">
                                 <fieldset>
                                     <legend>Quantidade:</legend>
-                                    <input type="number" value={inputs.quant_prod || ""} onChange={handleChange} name="quant_prod" id="quant_prod" />
-                                    <a href="#" title="Reduzir Quantidade" onClick={reduzir_quant} className="btn red pulse waves-effect z-depth-2">
+                                    <input type="number" defaultValue={inputs.quant_prod || ""} value={quant_prod} onChange={handleChange} name="quant_prod" id="quant_prod" />
+                                    <a href="#" title="Reduzir Quantidade" onClick={reduzir_quant} className="btn btn-floating red pulse waves-effect z-depth-0">
                                         <i className="material-icons">exposure_neg_1</i>
                                     </a>
 
-                                    <a href="#" title="Aumentar Quantidade" onClick={aumentar_quant} className="btn green waves-effect pulse z-depth-2">
+                                    <a href="#" title="Aumentar Quantidade" onClick={aumentar_quant} className="btn btn-floating green waves-effect pulse z-depth-0">
                                         <i className="material-icons">plus_one</i>
                                     </a>
                                 </fieldset>

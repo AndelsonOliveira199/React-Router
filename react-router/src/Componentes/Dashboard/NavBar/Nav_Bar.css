@@ -11,6 +11,6 @@ table thead{
     text-transform: uppercase;
     border-top-left-radius: 50px;
 }
-table tbody tr td{
+table tbody tr{
     border-bottom-right-radius: 50px;
 }

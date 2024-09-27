@@ -52,7 +52,7 @@ const Nav_Bar = () => {
               <a href="#" title="Adicionar Produto" className="right btn waves-effect blue">
                 <i className="material-icons">add_box</i>
               </a>
-            <table className="centered striped">
+            <table className="centered responsive-table">
               <thead>
                 <tr>
                   <th>Produto</th>
@@ -85,9 +85,32 @@ const Nav_Bar = () => {
             </div>
           </div>
         </div>
-        <div id="test2" className="col s12">Test 2</div>
-        <div id="test3" className="col s12">Test 3</div>
-        <div id="test4" className="col s12">Test 4</div>
+        <div id="test2" className="col s12 l4">
+          <div className="container">
+            <div className="card">
+              <div className="card-action"><h5>Dados do Funcionário</h5></div>
+              <div className="card-content">
+                <p>Dados do funcionário</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="test3" className="col s12">
+          <div className="container">
+            <div className="card">
+              <div className="card-action"><h5>Relatórios</h5></div>
+              <div className="card-content"><p>Conteúdo do relatório</p></div>
+            </div>
+          </div>
+        </div>
+        <div id="test4" className="col s12">
+        <div className="container">
+          <div className="card">
+            <div className="card-action"><h5>Comentários</h5></div>
+            <div className="card-content"><p>Conteúdo dos comentáristas</p></div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
