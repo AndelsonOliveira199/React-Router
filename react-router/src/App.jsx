@@ -5,6 +5,7 @@ import Search from "./Componentes/Search";
 import Slide from "./Componentes/Slide";
 import Cards from "./Componentes/Cards"
 import Conteudo from "./Componentes/Conteudo";
+import Comentarios from "./Componentes/Comentarios/Comentarios";
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
         {/* SEARCH BAR */}
 
         <Search />
-      
+
+        <Comentarios />
 
       {/* FOOTER */}
 

@@ -1,0 +1,41 @@
+.card-panel{
+    background-color: rgba(232, 129, 19, 0.6);
+}
+.card-content h4{
+    color: white;
+}
+/* .card-content ul{
+    width: 460px;
+} */
+ .card-panel{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+ }
+ .card-content button{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.chip img{
+    width: 30px;
+    height: 30px;
+}
+.card-content ul{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card-content textarea{
+    background-color: #242424;
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-left: 10px;
+}

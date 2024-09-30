@@ -7,7 +7,19 @@ import 'materialize-css/dist/js/materialize.min';
 const Sobre = () => {
 
   const [numero, setNumero] = useState(0);
+  // const [count, setCount] = useState(1);
 
+  // useEffect(() =>{
+  //   document.title = `Você clicou ${count} vezes`;
+  // })
+
+  // const trocar_titulo = () => {
+  //   setCount(count + 1);
+  // }
+
+  // numero : valor inicial
+  // setNumero : variavel que atualiza o estado da variavel
+  // useState : inicialização da variavel ou função do useState
   const incrementCount = () => {
     setNumero(numero + 1);
   }

@@ -6,31 +6,33 @@
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
-#email{
+.login-form-group .form-field{
     background-color: white;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    font-family: fantasy;
+    margin-bottom: 20px;
 }
-#password{
-    background-color: white;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-.botao{
+.login-form-group .botao{
     background-color: #d348f3;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    margin-top: 20px;
 }
-label{
-    margin-top: -5px;
-    color: black;
+h4{
+  font-family: fantasy;
+  text-align: center;  
+}
+.form-error{
+    background: rgba(185, 4, 4, 0.6);
+    color: rgb(243, 239, 239);
+}
+.form1{
+    margin-bottom: 20px;
 }
