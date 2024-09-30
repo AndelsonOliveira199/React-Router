@@ -19,7 +19,11 @@ const Comprar = () => {
     //   }, []);
       
      const handleClickCompra = (values) => {
-        console.log(values)
+        const quant_prod = document.getElementsByName("quant_prod").value;
+        const valor = document.getElementsByName("valor").value;
+        const res = quant_prod * valor;
+        alert("DADOS DE COMPRA", JSON.stringify(values, null, 2))
+        alert(`Valor total: ${res}`);
      }
     // Esquema de validação com Yup
     const validationCompra = Yup.object().shape({
