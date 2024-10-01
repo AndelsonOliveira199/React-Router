@@ -1,5 +1,5 @@
 import NavBar from "../Componentes/NavBar"
-// import { useEffect } from "react";
+import { useEffect } from "react";
 import '../rotas/Comprar.css'
 import 'materialize-css/dist/css/materialize.min.css'
 import 'materialize-css/dist/js/materialize.min'
@@ -10,13 +10,13 @@ import { Formik, Form, Field, ErrorMessage } from 'formik'
 
 const Comprar = () => {
 
-    // useEffect(() => {
+    useEffect(() => {
     
-    //     const M = window.M; // Certifique-se de que Materialize está disponível no escopo global
-    //     const formSelect = document.querySelectorAll('select');
-    //     M.FormSelect.init(formSelect); 
+        const M = window.M; // Certifique-se de que Materialize está disponível no escopo global
+        const formSelect = document.querySelectorAll('select');
+        M.FormSelect.init(formSelect); 
     
-    //   }, []);
+      }, []);
       
 
     // Esquema de envio dos dados
@@ -33,10 +33,9 @@ const Comprar = () => {
     const validationCompra = Yup.object().shape({
         primeiro_nome: Yup.string().required('O primeiro nome é obrigatório'),
         nome_produto: Yup.string().required('O nome do produto é obrigatório'),
-        quant_prod: Yup.number()
+        quant_prod: Yup.number("O valor da quantidade tem que ser um número")
         .required('A quantidade do produto é obrigatória')
-        .positive('A quantidade deve ser positiva')
-        .integer('A quantidade deve ser um número inteiro'),
+        .positive('A quantidade deve ser positiva'),
         valor: Yup.number()
         .required('O valor do produto é obrigatório')
         .positive('O valor deve ser positivo'),
@@ -53,11 +52,15 @@ const Comprar = () => {
                         <Formik initialValues={{primeiro_nome: '', nome_produto: '', quant_prod: '', valor: ''}} onSubmit={handleClickCompra} validationSchema={validationCompra}>
                             <Form className="compra-form">
                                 <div className="compra-form-group">
-                                    <Field name="primeiro_nome" className="form-field" placeholder="Primeiro nome" />
+                                    <Field name="primeiro_nome" id="primeiro_nome" className="form-field" placeholder="Digite o seu primeiro nome" />
                                     <ErrorMessage component="span" name='primeiro_nome' className='form-error' />
                                 </div>
                                 <div className="compra-form-group">
-                                    <Field name="nome_produto" className="form-field" placeholder="Nome do produto" />
+                                    <Field name="nome_produto" as="select" className="form-field">
+                                        <option value="" selected disabled>Selecione o produto que quer</option>
+                                        <option value="pão">Pão</option>
+                                        <option value="bolo">Bolo</option>
+                                    </Field>
                                     <ErrorMessage component="span" name='nome_produto' className='form-error' />
                                 </div>
                                 <div className="compra-form-group">
@@ -65,7 +68,12 @@ const Comprar = () => {
                                     <ErrorMessage component="span" name='quant_prod' className='form-error' />
                                 </div>
                                 <div className="compra-form-group">
-                                    <Field name="valor" className="form-field" placeholder="Valor do produto" />
+                                    <Field name="valor" as="select" className="form-field" placeholder="Valor do produto">
+                                    <option value="" disabled selected>Selecione o preço</option>
+                                        <option value="25">25,00 KZ</option>
+                                        <option value="50">50,00 KZ</option>
+                                        <option value="100">100,00 KZ</option>
+                                    </Field>
                                     <ErrorMessage component="span" name='valor' className='form-error' />
                                 </div>
                                 <button type="submit" className="btn waves-effect botao" title="Comprar">

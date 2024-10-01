@@ -16,6 +16,10 @@
     font-family: fantasy;
     margin-top: 20px;
 }
+.compra-form-group Field option{
+    background: white;
+    color: grey; 
+}
 .inputs #produto{
     margin-left: 15px;
     font-family: fantasy;

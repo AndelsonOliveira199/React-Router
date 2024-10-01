@@ -6,6 +6,7 @@ import Slide from "./Componentes/Slide";
 import Cards from "./Componentes/Cards"
 import Conteudo from "./Componentes/Conteudo";
 import Comentarios from "./Componentes/Comentarios/Comentarios";
+import ListaEspera from "./Componentes/Lista-Espera/ListaEspera";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
         {/* SEARCH BAR */}
 
         <Search />
+
+        <ListaEspera />
 
         <Comentarios />
 

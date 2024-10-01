@@ -1,0 +1,27 @@
+.container .card{
+    margin-top: 50px;
+}
+.container .card .card-content p{
+    font-family: fantasy;
+}
+.modal{
+    background: rgba(232, 129, 19, 0.6);
+}
+.modal .modal-footer{
+    background: rgba(232, 129, 19, 0.6);
+    color: white;
+}
+.modal .modal-content{
+    color: white;
+}
+.modal .modal-content img{
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 3px solid #eb8808;
+    float: right;
+}
