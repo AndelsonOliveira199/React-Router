@@ -5,7 +5,6 @@ import Search from "./Componentes/Search";
 import Slide from "./Componentes/Slide";
 import Cards from "./Componentes/Cards"
 import Conteudo from "./Componentes/Conteudo";
-import Comentarios from "./Componentes/Comentarios/Comentarios";
 import ListaEspera from "./Componentes/Lista-Espera/ListaEspera";
 
 function App() {
@@ -30,8 +29,6 @@ function App() {
         <Search />
 
         <ListaEspera />
-
-        <Comentarios />
 
       {/* FOOTER */}
 

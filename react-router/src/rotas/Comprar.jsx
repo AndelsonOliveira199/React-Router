@@ -39,6 +39,8 @@ const Comprar = () => {
         valor: Yup.number()
         .required('O valor do produto é obrigatório')
         .positive('O valor deve ser positivo'),
+        ordem_fila: Yup.string()
+        .required('O valor da ordem de fila é obrigatório, selecione um valor para este campo')
     });
 
   return (
@@ -49,7 +51,7 @@ const Comprar = () => {
             <div className="col s12 m3 l4 offset-l4 formulario">
                 <div className="card">
                     <div className="card-content">
-                        <Formik initialValues={{primeiro_nome: '', nome_produto: '', quant_prod: '', valor: ''}} onSubmit={handleClickCompra} validationSchema={validationCompra}>
+                        <Formik initialValues={{primeiro_nome: '', nome_produto: '', quant_prod: '', valor: '', ordem_fila: ''}} onSubmit={handleClickCompra} validationSchema={validationCompra}>
                             <Form className="compra-form">
                                 <div className="compra-form-group">
                                     <Field name="primeiro_nome" id="primeiro_nome" className="form-field" placeholder="Digite o seu primeiro nome" />
@@ -68,13 +70,21 @@ const Comprar = () => {
                                     <ErrorMessage component="span" name='quant_prod' className='form-error' />
                                 </div>
                                 <div className="compra-form-group">
-                                    <Field name="valor" as="select" className="form-field" placeholder="Valor do produto">
+                                    <Field name="valor" as="select" className="form-field">
                                     <option value="" disabled selected>Selecione o preço</option>
                                         <option value="25">25,00 KZ</option>
                                         <option value="50">50,00 KZ</option>
                                         <option value="100">100,00 KZ</option>
                                     </Field>
                                     <ErrorMessage component="span" name='valor' className='form-error' />
+                                </div>
+                                <div className="compra-form-group">
+                                    <Field name="ordem_fila" as="select" className="form-field">
+                                    <option value="" disabled selected>Selecione o ordem da fila <i>(sua faixa etaria)</i></option>
+                                        <option value="não prioridade">Não Prioridade</option>
+                                        <option value="prioridade">Prioridade</option>
+                                    </Field>
+                                    <ErrorMessage component="span" name='ordem_fila' className='form-error' />
                                 </div>
                                 <button type="submit" className="btn waves-effect botao" title="Comprar">
                                     <i className="material-icons">send</i>

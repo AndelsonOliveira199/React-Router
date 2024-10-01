@@ -4,3 +4,10 @@ ol li{
 h3{
     color: white;
 }
+.tabs li{
+    font-weight: bolder;
+}
+h5{
+    font-weight: bolder;
+    color: white;
+}
