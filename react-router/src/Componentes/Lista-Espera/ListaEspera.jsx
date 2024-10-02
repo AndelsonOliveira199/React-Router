@@ -45,7 +45,6 @@ const ListaEspera = () => {
             </div>
             <div id="test4" className="col s12">
               <div className="container">
-                <h5>A sua sugestão é importante para o nosso crescimento</h5>
                 <Comentarios />
               </div>
             </div>
