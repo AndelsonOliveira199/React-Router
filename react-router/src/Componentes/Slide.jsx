@@ -25,7 +25,7 @@ const Slide = () => {
           <li>
             <img src={imagens.card02} />
             <div className="caption left-align">
-              <h3>Saudações da React-Router!</h3>
+              <h3>Saudações da Bakery</h3>
               <h5 className="light grey-text text-lighten-3">Estamos aqui para tornar sua vida mais fácil. Descubra nossas soluções eficientes e simplifique suas tarefas diárias..</h5>
             </div>
           </li>

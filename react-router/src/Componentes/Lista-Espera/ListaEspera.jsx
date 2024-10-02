@@ -25,7 +25,7 @@ const ListaEspera = () => {
                 <li className="tab col s3"><a className='active' href="#test1"><i className="material-icons">face</i> Lista de Espera</a></li>
                 <li className="tab col s3"><a href="#test2">Prioridade</a></li>
                 <li className="tab col s3"><a href="#test3">Atendidos</a></li>
-                <li className="tab col s3"><a href="#test4">Deixe seu comentário</a></li>
+                <li className="tab col s3"><a href="#test4">Deixe-nos seu feedback</a></li>
               </ul>
             </div>
             <div id="test1" className="col s12">

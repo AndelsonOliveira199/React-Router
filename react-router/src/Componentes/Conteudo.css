@@ -3,3 +3,6 @@
     font-weight: bolder;
     color: white;
   }
+  b{
+    text-transform: uppercase;
+  }

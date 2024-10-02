@@ -7,7 +7,7 @@ const Search = () => {
           <div className="nav-wrapper">
             <form>
               <div className="input-field">
-                <input id="search" type="search" placeholder="Em que podemos lhe ajudar?" required />
+                <input id="search" type="search" placeholder="Em que podemos lhe ajudar? Descreve aqui o produto que procura e nós lhe daremos uma resposta" required />
                 <label className="label-icon" htmlFor="search"><i className="material-icons">search</i></label>
                 <i className="material-icons">close</i>
               </div>

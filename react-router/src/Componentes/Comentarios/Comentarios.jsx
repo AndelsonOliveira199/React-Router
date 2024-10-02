@@ -17,15 +17,12 @@ const Comentarios = () => {
     <div>
       <div className="row">
         <div className="col s12">
-            <article className="col m6 l5 offset-l3">
-                <div className="card-panel">
-                    <div className="card-content">
-                        <h4>Comentários</h4>
-                        <textarea name="comentario" id="comentario" className='materialize-textarea' placeholder='Escreva um comentário'></textarea>
-                        <button className="btn btn-floating waves-effect blue" title='Adicionar Comentário'>
-                            <i className="material-icons">send</i></button>
-                    </div>
-                </div>
+            <article className="col m6 l5 ">
+                <p> 
+                  <button name='muito_satisfeito' title='Muito Satisfeito(a)' className="green white-text"><i className="material-icons medium">sentiment_very_satisfied</i></button>
+                  <button name='razuavel' title='Razuável' className="yellow white-text"><i className="material-icons medium">sentiment_satisfied</i></button>  
+                  <button name='insatisfeito' title='Insatisfeito(a)' className="red white-text"><i className="material-icons medium">sentiment_very_dissatisfied</i></button> 
+                </p>
             </article>
         </div>
       </div>
