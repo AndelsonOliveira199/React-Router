@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
-                <h5 className="white-text">React-Router</h5>
+                <h5 className="white-text">Bakery</h5>
                 <p className="grey-text text-lighten-4">
                 Obrigado por se juntar à nossa jornada! Juntos, podemos criar um futuro melhor. Explore, engaje-se e faça parte de algo significativo.
                 </p>

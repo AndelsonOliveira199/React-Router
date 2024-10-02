@@ -2,6 +2,7 @@ import {useEffect} from 'react'
 import "materialize-css/dist/css/materialize.min.css";
 import "materialize-css/dist/js/materialize.min";
 import { imagens } from "../assets/imagens";
+import '../Componentes/Slide.css'
 
 const Slide = () => {
 

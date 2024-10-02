@@ -1,3 +1,7 @@
+.sidenav {
+    z-index: 1005; /* Defina um valor maior que o do navbar */
+  }
+  
 nav{
     background: rgba(232, 129, 19, 0.6);
     border-radius: 0;
@@ -5,4 +9,10 @@ nav{
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
+    font-weight: bolder;
 }
+.brand-logo img{
+    height: 63px;
+    width: 80px;
+}
+  

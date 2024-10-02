@@ -1,7 +1,10 @@
 // import React, { useState } from 'react'
+import "materialize-css/dist/css/materialize.min.css";
+import "materialize-css/dist/js/materialize.min";
+import "material-icons/iconfont/material-icons.css"
 import './ListaEspera.css'
 import Comentarios from '../Comentarios/Comentarios';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const ListaEspera = () => {
 
@@ -19,10 +22,10 @@ const ListaEspera = () => {
         <div className="col s12">
           <div className="container">
             <ul className="tabs">
-                <li className="tab col s3"><Link className='active' to="#test1">Lista de Espera</Link></li>
-                <li className="tab col s3"><Link to="#test2">Prioridade</Link></li>
-                <li className="tab col s3"><Link to="#test3">Atendidos</Link></li>
-                <li className="tab col s3"><Link to="#test4">Deixe seu comentário</Link></li>
+                <li className="tab col s3"><a className='active' href="#test1"><i className="material-icons">face</i> Lista de Espera</a></li>
+                <li className="tab col s3"><a href="#test2">Prioridade</a></li>
+                <li className="tab col s3"><a href="#test3">Atendidos</a></li>
+                <li className="tab col s3"><a href="#test4">Deixe seu comentário</a></li>
               </ul>
             </div>
             <div id="test1" className="col s12">

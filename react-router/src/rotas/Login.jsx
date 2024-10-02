@@ -27,7 +27,7 @@ const Login = () => {
         <div className="col s12 login">
           <div className="card col m3 l4 offset-l4">
             <div className="card-title">
-              <h4>Login</h4>
+              <h4 className='white-text'><i className="material-icons medium">https</i></h4>
             </div>
             <div className="card-content">
               
@@ -42,7 +42,7 @@ const Login = () => {
                   <ErrorMessage component="span" name='password' className='form-error' />
                 </div>
                 <div className="login-form-group">
-                  <button type="submit" className="btn waves-effect botao">Entrar</button>
+                  <button type="submit" className="btn waves-effect botao z-depth-0">Entrar</button>
                 </div>
               </Form>
             </Formik>

@@ -12,7 +12,8 @@ const Cards = () => {
                   <img src={imagens.card01} alt="" />
                 </div>
                 <div className="card-content">
-                  <p>Primeiro artigo</p>
+                  <p>Descrição - Pão Itáliano</p>
+                  <p>Preço - 25,00 AOA</p>
                 </div>
               </div>
             </article>
@@ -22,7 +23,8 @@ const Cards = () => {
                   <img src={imagens.card02} alt="" />
                 </div>
                 <div className="card-content">
-                  <p>Segundo artigo</p>
+                  <p>Descrição - Pão Português</p>
+                  <p>Preço - 50,00 AOA</p>
                 </div>
               </div>
             </article>
@@ -32,7 +34,8 @@ const Cards = () => {
                   <img src={imagens.card03} alt="" />
                 </div>
                 <div className="card-content">
-                  <p>Terceiro artigo</p>
+                  <p>Descrição - Pão Americano</p>
+                  <p>Preço - 100,00 AOA</p>
                 </div>
               </div>
             </article>

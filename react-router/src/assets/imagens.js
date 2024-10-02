@@ -11,6 +11,8 @@ import linkedin from './linkedin.png'
 import twitter from './twitter.png'
 import gmail from './icons8-gmail-novo-480.png'
 import Braulio from './Braulio.png'
+import Logo from './logo.avif'
+import Logo01 from './logo01.png'
 
 
 export const imagens = {
@@ -27,4 +29,6 @@ export const imagens = {
     twitter,
     gmail,
     Braulio,
+    Logo,
+    Logo01,
 } 
